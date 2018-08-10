@@ -1,0 +1,32 @@
+﻿Build started 8/11/2018 6:00:23 AM.
+     1>Project "F:\Thuctap\Chat_1Server_1Client\Source\Server\Server\Server.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\Server.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp Tserver.cpp view.cpp
+         Main.cpp
+     1>Main.cpp(2): warning C4627: '#include <string>': skipped when looking for precompiled header use
+                 Add directive to 'stdafx.h' or rebuild precompiled header
+     1>Main.cpp(3): warning C4627: '#include <ctime>': skipped when looking for precompiled header use
+                 Add directive to 'stdafx.h' or rebuild precompiled header
+     1>Main.cpp(4): warning C4627: '#include "sqlite3.h"': skipped when looking for precompiled header use
+                 Add directive to 'stdafx.h' or rebuild precompiled header
+     1>Main.cpp(5): warning C4627: '#include "Model.h"': skipped when looking for precompiled header use
+                 Add directive to 'stdafx.h' or rebuild precompiled header
+         Tserver.cpp
+         view.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Thuctap\Chat_1Server_1Client\Source\Server\Release\Server.exe" /INCREMENTAL:NO /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"F:\Thuctap\Chat_1Server_1Client\Source\Server\Release\Server.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Thuctap\Chat_1Server_1Client\Source\Server\Release\Server.lib" /MACHINE:X86 /SAFESEH Release\Server.res
+         Release\Controller.obj
+         Release\Main.obj
+         Release\view.obj
+         Release\Model.obj
+         Release\stdafx.obj
+         Release\Tserver.obj
+         ..\..\..\..\SQLITE\sqlite3.obj
+         WS2_32.LIB
+     1>Main.obj : error LNK2001: unresolved external symbol "public: __thiscall server::~server(void)" (??1server@@QAE@XZ)
+     1>F:\Thuctap\Chat_1Server_1Client\Source\Server\Release\Server.exe : fatal error LNK1120: 1 unresolved externals
+     1>Done Building Project "F:\Thuctap\Chat_1Server_1Client\Source\Server\Server\Server.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.69
