@@ -1,0 +1,28 @@
+﻿Build started 8/10/2018 8:09:23 PM.
+     1>Project "F:\Thuctap\Chat_1Server_1Client\Source\Client\Client\Client.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\Client.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Client.cpp Controller.cpp Main.cpp Model.cpp
+         Client.cpp
+         Controller.cpp
+         Main.cpp
+         Model.cpp
+     1>Model.cpp(388): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Thuctap\Chat_1Server_1Client\Source\Client\Release\Client.exe" /INCREMENTAL:NO /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"F:\Thuctap\Chat_1Server_1Client\Source\Client\Release\Client.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Thuctap\Chat_1Server_1Client\Source\Client\Release\Client.lib" /MACHINE:X86 /SAFESEH Release\Client.res
+         Release\Client.obj
+         Release\Controller.obj
+         Release\Main.obj
+         Release\Model.obj
+         Release\stdafx.obj
+         ..\..\..\..\SQLITE\sqlite3.obj
+         Generating code
+     1>f:\thuctap\chat_1server_1client\source\client\client\model.cpp(138): warning C4715: 'Model::AddFriend' : not all control paths return a value
+     1>f:\thuctap\chat_1server_1client\source\client\client\model.cpp(32): warning C4700: uninitialized local variable 'connSock' used
+         Finished generating code
+     1>sqlite3.obj : warning LNK4099: PDB 'vc110.pdb' was not found with 'sqlite3.obj' or at 'F:\Thuctap\Chat_1Server_1Client\Source\Client\Release\vc110.pdb'; linking object as if no debug info
+         Client.vcxproj -> F:\Thuctap\Chat_1Server_1Client\Source\Client\Release\Client.exe
+     1>Done Building Project "F:\Thuctap\Chat_1Server_1Client\Source\Client\Client\Client.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:10.12
