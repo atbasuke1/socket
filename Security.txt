@@ -1,0 +1,67 @@
+﻿[SecurityBox]
+
++ 23/7/2018 
+
+- Tìm hiểu những cơ bản về thread:
+	+ phân chức năng của join() và detach();
+- biết về thread trong thư viện windows.h 
+	+ tìm hiểu về Mutex,Semaphore và WaitForSingleObject 
+	+ cách sử dụng
+	+ khi nào cần dùng cái nào
++ 31/7/2018
+-Các mô hình Client - Server, P2P :
+		+ Server phụ thuộc rất nhiều vào phần cứng;
+		+ Với Peer to Peer, Client không chỉ lấy dữ liệu mà còn có thể chia sẻ lại dữ liệu này với Client khác
+		và việc chia sẻ lại dữ liệu này người ta gọi nó là seeding
+		+ Hiệu suất của Peer to Peer sẽ tăng lên nếu số Client trong mạng càng đông.
+-Chồng giao thức OSI - TCP/IP :
+		+  TCP (Giao thức Điều khiển Giao vận) và IP (Giao thức Liên mạng)
+		+ Internet Protocol là một giao thức hướng dữ liệu được sử dụng bởi các máy chủ nguồn và đích để truyền dữ liệu trong một liên mạng chuyển mạch gói.
+- Proxy không chỉ có giá trị bởi nó làm được nhiệm vụ của một bộ lọc thông tin, nó còn tạo ra được sự an toàn cho các khách hàng của nó
+- DNS sever:
+		+ một hệ thống đặt tên theo thứ tự cho máy tính;
+		+ Mỗi website có một tên miền hay đường dẫn URL và một địa chỉ IP khác nhau
+		+ Giúp quá trình truy cập và lưu trữ thông tin trên các website thuận tiện, dễ dàng
+-HTTP :
+		+Giao thức truyền tải siêu văn bản,chủ yếu sử dụng cổng 80
+-FTP :
+		+Giao thức truyền tập tin. 
+		+Được dùng để trao đổi tập tin qua mạng lưới truyền thông dùng giao thức TCP/IP 
+		+Cần có hai máy tính, một máy chủ và một máy khách)
+- Man in the Middle:
+		+ kỹ thuật tấn công mạng, cho phép kẻ nào đó can thiệp vào kết nối Internet của người khác 
+		và thu thập mọi thông tin truyền trên hệ thống mạng đó
+- DDoS Tấn công từ chối dịch vụ
+		+ Tấn công DoS là một kiểu tấn công mà một người làm cho một hệ
+		  thống không thể sử dụng, hoặc làm cho hệ thống đó chậm đi một cách
+		  đáng kể với người dùng bình thường, bằng cách làm quá tải tài nguyên của hệ thống
+		Các hình thức tấn công: - Smurf: gởi rất nhiều lệnh ping đến một số lượng lớn máy tính trong một thời gian ngắn
+								- Buffer Overflow Attack : ghi đè lên dữ liệu và điều khiển chạy các chương trình và đánh cắp quyền điều khiển
+								- Ping of death: Kẻ tấn công gửi những gói tin IP lớn hơn số lương bytes cho phép của tin IP là 65.536 bytes.
+								- Teardrop
+								- SYN Attack
+								-Hàm recv() chỉ trả về khi nhận được dữ liệu trên socket
++ 3/8/2018
+• Hàm send() chỉ trả về khi socket gửi xong dữ liệu
+• Hàm gets_s() chỉ trả về khi có ký tự kết thúc xâu hoặc kết thúc file
+trên bộ đệm bàn phím
++ 4/8/2018
+- Server Socket: 
+	+ Tạo một socket - Lấy bộ mô tả tập tin!
+	+ liên kết với một địa chỉ 
+	+ lắng nghe trên một cổng và chờ kết nối được thiết lập.
+	+ chấp nhận kết nối từ máy khách.
+	+ send/recv - giống như cách chúng ta đọc và viết cho một tập tin.
+	+ tắt để kết thúc read/write.
+	+ đóng dữ liệu bản phát hành.
+
+- Client Socket:
+	+ Tạo một socket.
+	+ bind* - điều này có lẽ là không cần thiết vì bạn là khách hàng chứ không phải máy chủ.
+	+ kết nối với máy chủ.
+	+ send/recv - lặp lại cho đến khi chúng tôi có hoặc nhận dữ liệu
+	+ tắt để kết thúc read/write.
+	+ đóng dữ liệu bản phát hành.
+
+
+	
